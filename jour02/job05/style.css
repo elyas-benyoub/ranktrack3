@@ -1,0 +1,27 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 4096px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    background-image: linear-gradient(to right in oklab, coral, lightseagreen);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.overlay {
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    right: 0;
+    background-color: #fff;
+}

@@ -1,0 +1,17 @@
+html {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.konami {
+    background-color: #0062ff;
+}
