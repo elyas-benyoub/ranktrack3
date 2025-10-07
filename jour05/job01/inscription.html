@@ -1,0 +1,51 @@
+<div class="wrap-container">
+    <form class="form signup-form" aria-labelledby="signup-title">
+        <h1 id="signup-title">Formulaire d’inscription</h1>
+
+        <div class="form-group">
+            <label for="lastname">Nom</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Doe" autocomplete="family-name"
+                aria-describedby="lastname-error">
+            <small id="lastname-error" class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="firstname">Prénom</label>
+            <input type="text" name="firstname" id="firstname" placeholder="John" autocomplete="given-name"
+                aria-describedby="firstname-error">
+            <small id="firstname-error" class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" autocomplete="email" placeholder="ex : exemple@mail.com"
+                aria-describedby="email-error">
+            <small id="email-error" class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password" minlength="8" maxlength="64"
+                autocomplete="new-password" aria-describedby="password-error">
+            <small id="password-error" class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Adresse</label>
+            <input type="text" name="address" id="address" placeholder="1 Rue de la République"
+                autocomplete="street-address" aria-describedby="address-error">
+            <small id="address-error" class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="postal">Code postal</label>
+            <input type="text" name="postal" id="postal" inputmode="numeric" pattern="[0-9]{5}" placeholder="69000"
+                autocomplete="postal-code" aria-describedby="postal-error">
+            <small id="postal-error" class="error" aria-live="polite"></small>
+        </div>
+
+        <button type="submit">S'enregistrer</button>
+    </form>
+
+    <div id="form-feedback" role="alert" aria-live="assertive"></div>
+</div>

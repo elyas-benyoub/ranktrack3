@@ -1,0 +1,21 @@
+<div class="wrap-container">
+    <form class="form signin-form" aria-labelledby="signin-title">
+        <h1 id="signin-title">Formulaire de connexion</h1>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" autocomplete="email" placeholder="ex : exemple@mail.com"
+                aria-describedby="email-error">
+            <small id="email-error" class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password" minlength="8" maxlength="64"
+                autocomplete="new-password" aria-describedby="password-error">
+            <small id="password-error" class="error" aria-live="polite"></small>
+        </div>
+        <button type="submit">Se connecter</button>
+    </form>
+
+    <div id="form-feedback" role="alert" aria-live="assertive"></div>
+</div>
